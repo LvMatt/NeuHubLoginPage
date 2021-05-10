@@ -1,5 +1,5 @@
 Instructions: 
-1. Git clone repository (LINK: ) 
+1. Git clone repository (LINK: https://github.com/LvMatt/NeuHubLoginPage.git ) 
 2. Open the project in Visual Studio Code / or any other prefered text editor
 3. Open terminal and paste this line "npm install"
 4. After packages are installed, write to the terminal "npm start"

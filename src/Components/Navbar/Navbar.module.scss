@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Wrapper {
+    position: relative;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar{
+    background-color: #fff;
+    margin-top: 20px;
+    height: 56px;
+    float: left;
+    position: relative;
+    margin-right: 45px;
+    margin-left: 45px;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+
+    .Logo {
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    img[alt="Hub"]{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* For smaller laptops: */
+    .Navbar {
+        width: 100%;
+        float: none;
+        margin:0;
+        border-radius: 0;
+        border:0;
+      }      
+}

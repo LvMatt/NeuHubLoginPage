@@ -1,0 +1,149 @@
+.RightCard{
+    width: 622px;
+    height:  647px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0px 30px 30px 0px;
+    flex: 1;
+    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+    padding-left: 51px;
+    padding-right: 51px;
+    text-align: left;
+
+    .Login_Headline_Wrapper{
+        text-align: left;
+        padding-top:73px;
+        p{
+            position: relative;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 42px;
+            font-style: normal;
+
+            span{
+                font-weight:  600;
+            }
+        }
+        .Dashline{
+            height: 4px;
+            width: 89px;
+            background-color:#8166D1 ;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    } // Login_Headline_Wrapper
+
+    .FormWrapper{
+        margin-top: 30px;
+        color:#666666;
+
+        .FormInput{
+            outline: none;
+            padding-right: 51px;
+            width: 100%; 
+            height: 46px;
+            border-radius: 10px;
+            border: 1px solid #D0D0D0;
+            padding-left: 20px;
+        }
+
+        .FormInput:focus{@extend .FormInput;border: 2px solid #8166D1;}
+        // For inputs that does not met conditions.
+        .FormErrorInput{@extend .FormInput;border: 2px solid #ff4c4c;}
+        .FormErrorInput:focus{@extend .FormErrorInput;}
+        .FormErrorPasswordInput{@extend .FormErrorInput;}
+        .FormErrorEmailInput{@extend .FormErrorInput;}
+        //Static Background image for password input 
+        .FormInput:nth-child(5){
+            background:  url(/Assets/Images/EyeSlash.png)  right no-repeat ;
+            background-position: 97% 50%;
+        }
+
+        .ErrorMessage {
+            margin-top: 5px;
+            position: absolute;
+            font-size:11px;
+            color:red;
+        }
+        .formText{
+            font-size: 15px;
+            margin-top: 30px;;
+            margin-bottom: 10px;
+        }
+        .bottomFormActions{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            label{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #D6D6D6;
+            }
+
+            a{
+                color: #D6D6D6;
+                text-decoration: none;
+            }
+
+             .CheckBoxText{
+                float: right;
+                margin-left: 5px;
+            }
+        }
+        .ButtonWrapper{
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        button{
+            height: 40px;
+            width: 244px;
+            background-color: #48425C;               
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        button:hover{
+            background-color: #8166D1;
+            border-radius: 10px;
+            border: 0;
+        }
+       
+    } // end of Form-Wrapper
+} // end of Right-Card
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    .bottomFormActions {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label:nth-child(2){
+            margin-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* For laptops : */
+    .RightCard {
+        width: 498px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* For mobile phones: */
+    .RightCard {
+        height: auto; 
+        border-radius: 0;
+        width: 100%;
+        .ButtonWrapper{
+            button{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+

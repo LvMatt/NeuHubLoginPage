@@ -1,0 +1,15 @@
+.App{
+    background-color:  #EEEDF2;
+    height: 100vh;
+    width: 100%;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /* For smaller laptops: */
+    .App{
+        height: auto;
+        width: 100%;
+    }
+}
